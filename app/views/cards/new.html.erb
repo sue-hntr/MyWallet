@@ -1,0 +1,21 @@
+<!-- cards.new.html.erb -->
+<br>
+ <h1><%= "Credit Card Information, #{@user.fname}" %> </h1>
+<br>
+<%= form_for @card do |f| %>
+<%= f.label :CardNumber %>
+<%= f.number_field :cardnum %>
+<br>
+<br>
+<%= f.label	:Expiration_Month %>
+<%= f.number_field :expire_m %>
+<br>
+<br>
+<%= f.label	:Expiration_Year %>
+<%= f.number_field :expire_y %>
+<br>
+<br>
+<br>
+
+<%= f.submit "create" %>
+<% end %>

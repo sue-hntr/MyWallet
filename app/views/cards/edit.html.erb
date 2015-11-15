@@ -1,0 +1,26 @@
+<!-- cards.edit.html.erb -->
+<br>
+<h3>Edit Your Credit Card Info</h3>
+<%= form_for @card do |f| %>
+<%= f.label :CardNumber %>
+<%= f.text_field :cardnum %>
+<br>
+<br>
+<%= f.label :CardType %>
+<%= f.text_field :cardtype %>
+<br>
+<br>
+<%= f.label	:ExpirationMonth %>
+<%= f.text_field :expire_m%>
+<br>
+<br>
+<%= f.label :ExpirationYear %>
+<%= f.text_field :expire_y %>
+<br>
+<br>
+<%= f.submit "update" %>
+<% end %>
+<br>
+<br>
+<%= link_to "Delete Credit Card", card_path, method: :delete %>
+

@@ -1,0 +1,16 @@
+<!-- cards.show.html.erb -->
+<br>
+<h1>Confirm Your Credit Card Info</h1>
+<br>
+<br>
+<h3><%= "Card Type:  #{@card.cardtype}" %></h3>
+<br>
+<h3><%= "Card Number:  #{@card.cardnum}" %></h3>
+<br>
+<h3><%= "Expiration:  #{@card.expire_m} / #{@card.expire_y}" %></h3>
+<br>
+<br>
+<br>
+<%= link_to "EDIT your contact info", edit_user_path(@user.id) %>
+<%= link_to "Log Out", logout_path, method: :delete %>
+<%= link_to "Select A UserCard", user_cards_path %>

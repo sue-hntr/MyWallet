@@ -1,0 +1,17 @@
+Users - Email (unique) 
+- Phone (correct format) 
+- First Name (present) 
+- Last Name (present) 
+- Cash balance (cannot be below 0)
+
+Cards 
+- Card Number (valid format) 
+- Card Type (auto-filled using a before_save hook - all cards can be identified by first few digits) 
+- Expiration month (only 12 possible values) 
+- Expiration year (valid format)
+
+UserCard 
+- Users can share their cards with other users 
+Build a simple interface to the application. 
+If you have extra time, use CSS and JS to make the front end truly interactive! 
+*NOTE: NEVER store real credit card information plain-text in a database! This app is JUST FOR FUN.
