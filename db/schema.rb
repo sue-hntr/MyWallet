@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20150921190019) do
 
   create_table "cards", force: :cascade do |t|
-    t.integer  "cardnum"
+    t.string   "cardnum"
     t.string   "cardtype"
     t.integer  "expire_m"
     t.datetime "expire_y"

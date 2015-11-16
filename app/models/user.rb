@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
 	#associations
 	has_many	:cards
-	has_many	:user_cards
+	has_many	:user_cards, :through => :user_cards
 
 	#validations
 	validates :email, uniqueness: true

@@ -15,8 +15,17 @@ def current_user
 	end
 
 	def create   
-		@user = User.new(user_params)   
+		@user = User.new(user_params)
+		puts "UUUUUUUUUUUUUU"
+		puts user_params   
 		if @user.save
+			puts "TTTTTTTTTT"
+			puts @user
+			puts "SSSSSSSSSSSS"
+			puts user_params
+			puts "RRRRRRRRRRRRR"
+			@user.lname
+			binding.pry
 			redirect_to login_path
 		else
 			flash[:error] = @user.errors.full_messages.to_sentence
